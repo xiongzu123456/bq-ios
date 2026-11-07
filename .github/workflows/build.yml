@@ -14,14 +14,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_15.4.app || true
+      - name: Show Xcode
+        run: xcodebuild -version
 
       - name: Install XcodeGen
         run: brew install xcodegen
 
       - name: Generate Xcode project
-        run: xcodegen generate
+        run: |
+          set -e
+          xcodegen generate 2>&1 | tee gen.log
+
+      - name: List project
+        run: ls -la
 
       - name: Build (unsigned)
         run: |
@@ -34,19 +39,21 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            DEVELOPMENT_TEAM=""
+            DEVELOPMENT_TEAM="" 2>&1 | tee build.log
 
       - name: Pack into IPA
         run: |
           set -e
           APP_PATH=$(find build/dd/Build/Products -name "*.app" -maxdepth 3 | head -1)
           echo "App path: $APP_PATH"
+          ls -R build/dd/Build/Products || true
           rm -rf build/Payload
           mkdir -p build/Payload
           cp -R "$APP_PATH" build/Payload/
           cd build && zip -r BQIos.ipa Payload
 
       - name: Commit IPA back to repo
+        if: success()
         run: |
           set -e
           git config user.email "ci@bq.local"
@@ -55,3 +62,14 @@ jobs:
           git add BQIos.ipa
           git commit -m "ci: add built IPA" || echo "no change"
           git push
+
+      - name: On failure dump logs
+        if: failure()
+        run: |
+          git config user.email "ci@bq.local"
+          git config user.name "bq-ci"
+          cp gen.log fail-gen.log 2>/dev/null || true
+          cp build.log fail-build.log 2>/dev/null || true
+          git add fail-*.log || true
+          git commit -m "ci: dump failure logs" || echo "nothing"
+          git push || echo "push failed"
