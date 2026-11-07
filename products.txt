@@ -1,0 +1,2 @@
+build/dd/Build/Products/Release-iphoneos/BQIos.app/Info.plist
+build/dd/Build/Products/Release-iphoneos/BQIos.app/PkgInfo

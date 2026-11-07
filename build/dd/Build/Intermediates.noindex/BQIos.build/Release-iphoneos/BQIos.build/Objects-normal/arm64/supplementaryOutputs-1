@@ -1,0 +1,12 @@
+{
+  "/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/AppDelegate.swift" : {
+    "abi-baseline-json" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.abi.json",
+    "const-values" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.swiftconstvalues",
+    "dependencies" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.d",
+    "diagnostics" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.dia",
+    "objc-header" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-Swift.h",
+    "swiftdoc" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftdoc",
+    "swiftmodule" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftmodule",
+    "swiftsourceinfo" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftsourceinfo"
+  }
+}

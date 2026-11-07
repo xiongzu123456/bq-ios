@@ -1,0 +1,322 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild build -scheme BQIos -configuration Release -destination generic/platform=iOS -derivedDataPath build/dd CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= DEVELOPMENT_TEAM=
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    DEVELOPMENT_TEAM = 
+
+2026-11-07 12:04:19.821 xcodebuild[20299:53391] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'BQIos' in project 'BQIos' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: f65a4c1d6d382ba0fa6bfa2da3c7aa5e
+Build description path: /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/XCBuildData/f65a4c1d6d382ba0fa6bfa2da3c7aa5e.xcbuilddata
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products
+
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /Users/runner/work/bq-ios/bq-ios/build/dd/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /Users/runner/work/bq-ios/bq-ios/build/dd/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos-44d6c5f4a76c24bf3e4fa9cc3b5f6a45-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos-44d6c5f4a76c24bf3e4fa9cc3b5f6a45-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/bq-ios/bq-ios/BQIos.xcodeproj
+    builtin-create-build-directory /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos_const_extract_protocols.json (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftFileList (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftConstValuesFileList (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.LinkFileList (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-OutputFileMap.json (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.hmap
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.DependencyStaticMetadataFileList (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.DependencyMetadataFileList (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-project-headers.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-own-target-headers.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-generated-files.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-target-headers.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-non-framework-target-headers.hmap (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    write-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-non-framework-target-headers.hmap
+
+MkDir /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/BQIos.app (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    /bin/mkdir -p /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/BQIos.app
+
+ProcessInfoPlistFile /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/BQIos.app/Info.plist /Users/runner/work/bq-ios/bq-ios/BQIos/Info.plist (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    builtin-infoPlistUtility /Users/runner/work/bq-ios/bq-ios/BQIos/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/BQIos.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/BQIos.app/Info.plist
+
+SwiftDriver BQIos normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BQIos -O -whole-module-optimization @/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios12.0 -g -module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -F /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-generated-files.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-own-target-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-project-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-Swift.h -working-directory /Users/runner/work/bq-ios/bq-ios -no-emit-module-separately-wmo
+
+SwiftDriver\ Compilation BQIos normal arm64 com.apple.xcode.tools.swift.compiler (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name BQIos -O -whole-module-optimization @/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios12.0 -g -module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -F /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-generated-files.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-own-target-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-project-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-Swift.h -working-directory /Users/runner/work/bq-ios/bq-ios -no-emit-module-separately-wmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_AvailabilityInternal-UF641PT82OG4UXZ7W712OER7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_float-D2JAFYS2TWPGY5EJ5G0XFTGS9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrauth-D6SE3URBGSFI57EUOIRRTXE0X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdbool-7TP4PTD41X9YQ22M57DBCK8J6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_SwiftConcurrencyShims-50E68XPRTRG2HVXN1Z0FT3EBD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdarg-DTQZ2VMEN208U4VDB7ZD5RPJX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftShims-28NBG9DBABBCYO7LB5MA3BQM8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DeveloperToolsSupport-1O9XL4BVVNPBQ2LCPMCAQ6OKH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stddef-8QJRP8G6Z8SC1IVR19C8QW68A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrcheck-1CHDB9CR710FRIC03O4Q0K63H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation1-7FY1010A4ARQEHKMZIWX2BTGJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation2-EH6KYOY9L1AUEBDGFDIJHTWKW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_limits-49I5EZSE38JGPP6T9PXQYFWJZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdint-2QAFNSJS5CSF9L388756L8G1Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/sys_types-BRZTNYV1RSYJE4A8TM6SX7NHF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_tgmath-19XRU2SBGVTWVHXF4MG4KUDH4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_intrinsics-1OGKJZNWOLY2VAGYZVDWLW3FV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation3-3MS4QVIAFEUKNOJK8JMG4EL7D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdatomic-6TBNUSDZMJ1VX8F07NMPT706R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_inttypes-EQ94YX29OPA88ICJMB8N7BWJG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Darwin-F1WVDK0T3X4APERK2WDKPBQS6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/simd-6V1EZ32NI7NVZXL10PE7IQP8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ObjectiveC-8TPXC4CLPPZM4DBXH32HO3MH1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/MachO-9AS0N6VSZZN67LWR04GDP38CM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_object-5IUJKBHBAV8S4WMPJ5PKBC6OS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_workgroup-21TA7VWK2ZTPP2OKN2L49QBXC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Dispatch-31I3QN91O7EQPFDBYHDWABSJZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/XPC-1GS4JJMOL143SO7IHTLPPGHM1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreFoundation-BN1HSIAMBG327Q654A7T8DJ8H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/dnssd-7ZHGX28Z51WPY4DF87YS1FGQJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Spatial-DGBWXWMMNNZ94NAWG55UAKAD4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os-77YWPGNGC7952401OIEUP417F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CFNetwork-A4E0S2WJG2HQ2KP2PDL71IP2J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreGraphics-6ZE0W6J8R2NGT5ZBVCB7Q26DX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Security-D4Y28BYFI7H0TAS003FCEFTZ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ImageIO-8JHHQFOUJIQFFBJV49XPE6M1A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreText-3ZGX5CX0H8WI7K8LV8T5HQBC3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Foundation-BOSZM7CBBUDRV7482D952ZQ26.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UserNotifications-RW8FSYXIRZJLVY20HFNV9CZM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DataDetection-889T01KUY75WPAL7QQGBMC7OF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OSLog-CORDC9SUPWVD1VYUJ7VQVBYRS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UniformTypeIdentifiers-2Q6Z4F8SF7LMG8ES8M5MH7P7V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Symbols-DXE7DSSC222J2TKGR9JGWQSMD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/FileProvider-4G7J2OV5A7DFKGH1N2MUWW1P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Accessibility-89240LQWU2GSQWJIDHO20WX6R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreTransferable-8A6G7PCGI7IWE0H0HX8ECXSF6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Network-5A6I0IMXGVM669RMU1QWD6O00.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/IOSurface-4IWG3B9762WXUWCXPKCL3J3B3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIUtilities-5CL5P6ERKE4MMBJ09VEF8L5O7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OpenGLES-BGK3KC23WI81GPDTL7VR4SW76.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Metal-7IUDL9QAB6CXHRMT5Y1ISFNJ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreVideo-AQX7ZEQH2WZ7UL0GPNDL426CI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreImage-9HY0TJQ27PEBZGEGRYQJ6W499.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/QuartzCore-5HM8BINCX9LYE0A9D3O37D1I9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftUICore-DZKK873FVY7DYZZEMVR5ZR4CJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIKit-CUUWA6XDH06Q343ENJCFB1OEK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/WebKit-DGDNMQRAYF39OIGM17DGK2E8G.pcm
+
+SwiftCompile normal arm64 Compiling\ AppDelegate.swift,\ SceneDelegate.swift,\ ViewController.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/AppDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/ViewController.swift /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation3.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Combine.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ObjectiveC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DataDetection.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Concurrency.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation2.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Observation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Foundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Swift.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/QuartzCore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Symbols.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUICore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreVideo.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Metal.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DeveloperToolsSupport.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreTransferable.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/OSLog.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Builtin_float.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/simd.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UniformTypeIdentifiers.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Dispatch.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Spatial.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/WebKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Network.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Darwin.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/os.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation1.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/FileProvider.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreGraphics.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreImage.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/XPC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_StringProcessing.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreText.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Distributed.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Accessibility.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/System.swiftmodule/arm64e-apple-ios.swiftmodule /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreText-3ZGX5CX0H8WI7K8LV8T5HQBC3.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_intrinsics-1OGKJZNWOLY2VAGYZVDWLW3FV.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Dispatch-31I3QN91O7EQPFDBYHDWABSJZ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OSLog-CORDC9SUPWVD1VYUJ7VQVBYRS.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DataDetection-889T01KUY75WPAL7QQGBMC7OF.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIKit-CUUWA6XDH06Q343ENJCFB1OEK.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stddef-8QJRP8G6Z8SC1IVR19C8QW68A.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrauth-D6SE3URBGSFI57EUOIRRTXE0X.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CFNetwork-A4E0S2WJG2HQ2KP2PDL71IP2J.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_tgmath-19XRU2SBGVTWVHXF4MG4KUDH4.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdarg-DTQZ2VMEN208U4VDB7ZD5RPJX.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ImageIO-8JHHQFOUJIQFFBJV49XPE6M1A.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Symbols-DXE7DSSC222J2TKGR9JGWQSMD.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Foundation-BOSZM7CBBUDRV7482D952ZQ26.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/dnssd-7ZHGX28Z51WPY4DF87YS1FGQJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrcheck-1CHDB9CR710FRIC03O4Q0K63H.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation2-EH6KYOY9L1AUEBDGFDIJHTWKW.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/XPC-1GS4JJMOL143SO7IHTLPPGHM1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/sys_types-BRZTNYV1RSYJE4A8TM6SX7NHF.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_limits-49I5EZSE38JGPP6T9PXQYFWJZ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/WebKit-DGDNMQRAYF39OIGM17DGK2E8G.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_AvailabilityInternal-UF641PT82OG4UXZ7W712OER7.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_float-D2JAFYS2TWPGY5EJ5G0XFTGS9.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreTransferable-8A6G7PCGI7IWE0H0HX8ECXSF6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/QuartzCore-5HM8BINCX9LYE0A9D3O37D1I9.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreVideo-AQX7ZEQH2WZ7UL0GPNDL426CI.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftUICore-DZKK873FVY7DYZZEMVR5ZR4CJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreGraphics-6ZE0W6J8R2NGT5ZBVCB7Q26DX.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreFoundation-BN1HSIAMBG327Q654A7T8DJ8H.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UserNotifications-RW8FSYXIRZJLVY20HFNV9CZM.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Security-D4Y28BYFI7H0TAS003FCEFTZ1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UniformTypeIdentifiers-2Q6Z4F8SF7LMG8ES8M5MH7P7V.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation1-7FY1010A4ARQEHKMZIWX2BTGJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreImage-9HY0TJQ27PEBZGEGRYQJ6W499.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/IOSurface-4IWG3B9762WXUWCXPKCL3J3B3.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_workgroup-21TA7VWK2ZTPP2OKN2L49QBXC.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIUtilities-5CL5P6ERKE4MMBJ09VEF8L5O7.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation3-3MS4QVIAFEUKNOJK8JMG4EL7D.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdbool-7TP4PTD41X9YQ22M57DBCK8J6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_object-5IUJKBHBAV8S4WMPJ5PKBC6OS.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Network-5A6I0IMXGVM669RMU1QWD6O00.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/simd-6V1EZ32NI7NVZXL10PE7IQP8P.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_SwiftConcurrencyShims-50E68XPRTRG2HVXN1Z0FT3EBD.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/FileProvider-4G7J2OV5A7DFKGH1N2MUWW1P.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Accessibility-89240LQWU2GSQWJIDHO20WX6R.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdint-2QAFNSJS5CSF9L388756L8G1Q.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Spatial-DGBWXWMMNNZ94NAWG55UAKAD4.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OpenGLES-BGK3KC23WI81GPDTL7VR4SW76.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdatomic-6TBNUSDZMJ1VX8F07NMPT706R.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Darwin-F1WVDK0T3X4APERK2WDKPBQS6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ObjectiveC-8TPXC4CLPPZM4DBXH32HO3MH1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_inttypes-EQ94YX29OPA88ICJMB8N7BWJG.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftShims-28NBG9DBABBCYO7LB5MA3BQM8.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/MachO-9AS0N6VSZZN67LWR04GDP38CM.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Metal-7IUDL9QAB6CXHRMT5Y1ISFNJ1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DeveloperToolsSupport-1O9XL4BVVNPBQ2LCPMCAQ6OKH.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os-77YWPGNGC7952401OIEUP417F.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-dependencies-1.json (in target 'BQIos' from project 'BQIos')
+
+CompileSwift normal arm64 (in target 'BQIos' from project 'BQIos')
+    cd /Users/runner/work/bq-ios/bq-ios
+    
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:25: error: 'UIScene' is only available in iOS 13.0 or newer
+    func scene(_ scene: UIScene,
+                        ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:10: note: add '@available' attribute to enclosing instance method
+    func scene(_ scene: UIScene,
+         ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:3:7: note: add '@available' attribute to enclosing class
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:7:39: error: 'UISceneSession' is only available in iOS 13.0 or newer
+               willConnectTo session: UISceneSession,
+                                      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:10: note: add '@available' attribute to enclosing instance method
+    func scene(_ scene: UIScene,
+         ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:3:7: note: add '@available' attribute to enclosing class
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:8:43: error: 'UIScene' is only available in iOS 13.0 or newer
+               options connectionOptions: UIScene.ConnectionOptions) {
+                                          ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:10: note: add '@available' attribute to enclosing instance method
+    func scene(_ scene: UIScene,
+         ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:3:7: note: add '@available' attribute to enclosing class
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:9:43: error: 'UIWindowScene' is only available in iOS 13.0 or newer
+        guard let windowScene = scene as? UIWindowScene else { return }
+                                          ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:9:43: note: add 'if #available' version check
+        guard let windowScene = scene as? UIWindowScene else { return }
+                                          ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:10: note: add '@available' attribute to enclosing instance method
+    func scene(_ scene: UIScene,
+         ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:3:7: note: add '@available' attribute to enclosing class
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:10:22: error: 'init(windowScene:)' is only available in iOS 13.0 or newer
+        let window = UIWindow(windowScene: windowScene)
+                     ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:10:22: note: add 'if #available' version check
+        let window = UIWindow(windowScene: windowScene)
+                     ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:6:10: note: add '@available' attribute to enclosing instance method
+    func scene(_ scene: UIScene,
+         ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift:3:7: note: add '@available' attribute to enclosing class
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+      ^
+/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/ViewController.swift:15:16: warning: 'mediaPlaybackRequiresUserAction' was deprecated in iOS 9.0
+        config.mediaPlaybackRequiresUserAction = false
+               ^
+
+Failed frontend command:
+/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/AppDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/ViewController.swift -supplementary-output-file-map /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/supplementaryOutputs-1 -target arm64-apple-ios12.0 -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-dependencies-1.json -debug-module-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos.swiftmodule -Xllvm -aarch64-use-tbi -enable-objc-interop -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -I /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -F /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos -no-color-diagnostics -Xcc -fno-color-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -swift-version 5 -O -serialize-debugging-options -const-gather-protocols-file /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/bq-ios/bq-ios -file-compilation-dir /Users/runner/work/bq-ios/bq-ios -Xcc -ivfsstatcache -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-generated-files.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-own-target-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/BQIos-project-headers.hmap -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/DerivedSources -no-auto-bridging-header-chaining -module-name BQIos -frontend-parseable-output -disable-clang-spi -clang-target arm64-apple-ios26.5 -target-sdk-version 26.5 -target-sdk-name iphoneos26.5 -in-process-plugin-server-path /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -enable-default-cmo -num-threads 3 -o /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/AppDelegate.o -o /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/SceneDelegate.o -o /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/ViewController.o -index-unit-output-path /BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/AppDelegate.o -index-unit-output-path /BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/SceneDelegate.o -index-unit-output-path /BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/ViewController.o
+** BUILD FAILED **
+
+
+The following build commands failed:
+	CompileSwift normal arm64 (in target 'BQIos' from project 'BQIos')
+	SwiftCompile normal arm64 Compiling\ AppDelegate.swift,\ SceneDelegate.swift,\ ViewController.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/AppDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift /Users/runner/work/bq-ios/bq-ios/BQIos/Sources/ViewController.swift /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation3.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Combine.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ObjectiveC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DataDetection.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Concurrency.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation2.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Observation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Foundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Swift.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/QuartzCore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Symbols.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUICore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreVideo.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Metal.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DeveloperToolsSupport.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreTransferable.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/OSLog.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Builtin_float.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/simd.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UniformTypeIdentifiers.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Dispatch.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Spatial.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/WebKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Network.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Darwin.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/os.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation1.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/FileProvider.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreGraphics.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreImage.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/XPC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_StringProcessing.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreText.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Distributed.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Accessibility.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/System.swiftmodule/arm64e-apple-ios.swiftmodule /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreText-3ZGX5CX0H8WI7K8LV8T5HQBC3.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_intrinsics-1OGKJZNWOLY2VAGYZVDWLW3FV.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Dispatch-31I3QN91O7EQPFDBYHDWABSJZ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OSLog-CORDC9SUPWVD1VYUJ7VQVBYRS.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DataDetection-889T01KUY75WPAL7QQGBMC7OF.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIKit-CUUWA6XDH06Q343ENJCFB1OEK.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stddef-8QJRP8G6Z8SC1IVR19C8QW68A.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrauth-D6SE3URBGSFI57EUOIRRTXE0X.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CFNetwork-A4E0S2WJG2HQ2KP2PDL71IP2J.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_tgmath-19XRU2SBGVTWVHXF4MG4KUDH4.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdarg-DTQZ2VMEN208U4VDB7ZD5RPJX.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ImageIO-8JHHQFOUJIQFFBJV49XPE6M1A.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Symbols-DXE7DSSC222J2TKGR9JGWQSMD.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Foundation-BOSZM7CBBUDRV7482D952ZQ26.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/dnssd-7ZHGX28Z51WPY4DF87YS1FGQJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ptrcheck-1CHDB9CR710FRIC03O4Q0K63H.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation2-EH6KYOY9L1AUEBDGFDIJHTWKW.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/XPC-1GS4JJMOL143SO7IHTLPPGHM1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/sys_types-BRZTNYV1RSYJE4A8TM6SX7NHF.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_limits-49I5EZSE38JGPP6T9PXQYFWJZ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/WebKit-DGDNMQRAYF39OIGM17DGK2E8G.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_AvailabilityInternal-UF641PT82OG4UXZ7W712OER7.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_float-D2JAFYS2TWPGY5EJ5G0XFTGS9.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreTransferable-8A6G7PCGI7IWE0H0HX8ECXSF6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/QuartzCore-5HM8BINCX9LYE0A9D3O37D1I9.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreVideo-AQX7ZEQH2WZ7UL0GPNDL426CI.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftUICore-DZKK873FVY7DYZZEMVR5ZR4CJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreGraphics-6ZE0W6J8R2NGT5ZBVCB7Q26DX.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreFoundation-BN1HSIAMBG327Q654A7T8DJ8H.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UserNotifications-RW8FSYXIRZJLVY20HFNV9CZM.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Security-D4Y28BYFI7H0TAS003FCEFTZ1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UniformTypeIdentifiers-2Q6Z4F8SF7LMG8ES8M5MH7P7V.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation1-7FY1010A4ARQEHKMZIWX2BTGJ.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/CoreImage-9HY0TJQ27PEBZGEGRYQJ6W499.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/IOSurface-4IWG3B9762WXUWCXPKCL3J3B3.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_workgroup-21TA7VWK2ZTPP2OKN2L49QBXC.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/UIUtilities-5CL5P6ERKE4MMBJ09VEF8L5O7.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_DarwinFoundation3-3MS4QVIAFEUKNOJK8JMG4EL7D.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdbool-7TP4PTD41X9YQ22M57DBCK8J6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os_object-5IUJKBHBAV8S4WMPJ5PKBC6OS.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Network-5A6I0IMXGVM669RMU1QWD6O00.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/simd-6V1EZ32NI7NVZXL10PE7IQP8P.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_SwiftConcurrencyShims-50E68XPRTRG2HVXN1Z0FT3EBD.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/FileProvider-4G7J2OV5A7DFKGH1N2MUWW1P.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Accessibility-89240LQWU2GSQWJIDHO20WX6R.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdint-2QAFNSJS5CSF9L388756L8G1Q.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Spatial-DGBWXWMMNNZ94NAWG55UAKAD4.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/OpenGLES-BGK3KC23WI81GPDTL7VR4SW76.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_stdatomic-6TBNUSDZMJ1VX8F07NMPT706R.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Darwin-F1WVDK0T3X4APERK2WDKPBQS6.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/ObjectiveC-8TPXC4CLPPZM4DBXH32HO3MH1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/_Builtin_inttypes-EQ94YX29OPA88ICJMB8N7BWJG.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/SwiftShims-28NBG9DBABBCYO7LB5MA3BQM8.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/MachO-9AS0N6VSZZN67LWR04GDP38CM.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/Metal-7IUDL9QAB6CXHRMT5Y1ISFNJ1.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/DeveloperToolsSupport-1O9XL4BVVNPBQ2LCPMCAQ6OKH.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/ModuleCache.noindex/os-77YWPGNGC7952401OIEUP417F.pcm /Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-dependencies-1.json (in target 'BQIos' from project 'BQIos')
+	Building project BQIos with scheme BQIos and configuration Release
+(3 failures)
