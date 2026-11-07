@@ -1,0 +1,26 @@
+{
+  "" : {
+    "const-values" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.swiftconstvalues",
+    "dependencies" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.d",
+    "diagnostics" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.dia",
+    "emit-module-dependencies" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary-emit-module.dia",
+    "pch" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/BQIos-primary.swiftdeps"
+  },
+  "/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/AppDelegate.swift" : {
+    "index-unit-output-path" : "/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Users/runner/work/bq-ios/bq-ios/BQIos/Sources/ViewController.swift" : {
+    "index-unit-output-path" : "/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/ViewController.o",
+    "llvm-bc" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/ViewController.bc",
+    "object" : "/Users/runner/work/bq-ios/bq-ios/build/dd/Build/Intermediates.noindex/BQIos.build/Release-iphoneos/BQIos.build/Objects-normal/arm64/ViewController.o"
+  }
+}

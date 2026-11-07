@@ -1,2 +1,10 @@
+build/dd/Build/Products/Release-iphoneos/BQIos.app.dSYM/Contents/Info.plist
+build/dd/Build/Products/Release-iphoneos/BQIos.app.dSYM/Contents/Resources/DWARF/BQIos
+build/dd/Build/Products/Release-iphoneos/BQIos.app.dSYM/Contents/Resources/Relocations/aarch64/BQIos.yml
+build/dd/Build/Products/Release-iphoneos/BQIos.app/BQIos
 build/dd/Build/Products/Release-iphoneos/BQIos.app/Info.plist
 build/dd/Build/Products/Release-iphoneos/BQIos.app/PkgInfo
+build/dd/Build/Products/Release-iphoneos/BQIos.swiftmodule/arm64-apple-ios.abi.json
+build/dd/Build/Products/Release-iphoneos/BQIos.swiftmodule/arm64-apple-ios.swiftdoc
+build/dd/Build/Products/Release-iphoneos/BQIos.swiftmodule/arm64-apple-ios.swiftmodule
+build/dd/Build/Products/Release-iphoneos/BQIos.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
