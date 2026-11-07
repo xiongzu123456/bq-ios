@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
@@ -43,9 +46,12 @@ jobs:
           cp -R "$APP_PATH" build/Payload/
           cd build && zip -r BQIos.ipa Payload
 
-      - name: Upload IPA
-        uses: actions/upload-artifact@v4
-        with:
-          name: BQIos-ipa
-          path: build/BQIos.ipa
-          retention-days: 7
+      - name: Commit IPA back to repo
+        run: |
+          set -e
+          git config user.email "ci@bq.local"
+          git config user.name "bq-ci"
+          cp build/BQIos.ipa ./BQIos.ipa
+          git add BQIos.ipa
+          git commit -m "ci: add built IPA" || echo "no change"
+          git push
