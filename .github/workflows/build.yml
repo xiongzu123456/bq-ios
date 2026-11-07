@@ -21,12 +21,10 @@ jobs:
         run: brew install xcodegen
 
       - name: Generate Xcode project
-        run: |
-          set -e
-          xcodegen generate 2>&1 | tee gen.log
+        run: xcodegen generate 2>&1 | tee gen.log
 
       - name: List project
-        run: ls -la
+        run: ls -la && find . -name '*.xcodeproj' -o -name '*.xcworkspace'
 
       - name: Build (unsigned)
         run: |
@@ -41,35 +39,27 @@ jobs:
             CODE_SIGN_IDENTITY="" \
             DEVELOPMENT_TEAM="" 2>&1 | tee build.log
 
+      - name: Dump Products tree
+        run: find build/dd/Build/Products -type f | sort | head -50 | tee products.txt
+
       - name: Pack into IPA
         run: |
           set -e
           APP_PATH=$(find build/dd/Build/Products -name "*.app" -maxdepth 3 | head -1)
           echo "App path: $APP_PATH"
-          ls -R build/dd/Build/Products || true
+          ls -laR "$APP_PATH" || true
           rm -rf build/Payload
           mkdir -p build/Payload
           cp -R "$APP_PATH" build/Payload/
           cd build && zip -r BQIos.ipa Payload
 
-      - name: Commit IPA back to repo
-        if: success()
+      - name: Commit logs and IPA back
         run: |
           set -e
           git config user.email "ci@bq.local"
           git config user.name "bq-ci"
-          cp build/BQIos.ipa ./BQIos.ipa
-          git add BQIos.ipa
-          git commit -m "ci: add built IPA" || echo "no change"
+          cp build/BQIos.ipa ./BQIos.ipa 2>/dev/null || true
+          cp gen.log build.log products.txt ./ 2>/dev/null || true
+          git add -A
+          git commit -m "ci: dump logs + ipa" || echo "nothing"
           git push
-
-      - name: On failure dump logs
-        if: failure()
-        run: |
-          git config user.email "ci@bq.local"
-          git config user.name "bq-ci"
-          cp gen.log fail-gen.log 2>/dev/null || true
-          cp build.log fail-build.log 2>/dev/null || true
-          git add fail-*.log || true
-          git commit -m "ci: dump failure logs" || echo "nothing"
-          git push || echo "push failed"
